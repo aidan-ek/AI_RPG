@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Stats.name = "Gooba";
+        Stats.name = "GOOBA";
         Stats.species = "Goblin";
         Stats.maxHealth = 25;
         Stats.health = 25;

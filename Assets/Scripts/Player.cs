@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
 
     public static class Stats
     {
+        public static string name = "PLAYER";
         public static int health = 1;
         public static Weapon weapon;
         public static Offhand offhand;
