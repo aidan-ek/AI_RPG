@@ -120,7 +120,7 @@ public class GameEngine : MonoBehaviour
     
     // run on enemy death
     void enemyDeath() {
-        SlowText(Enemy.currentEnemy.name + " died. You won!");
+        SlowText(Enemy.currentEnemy.name + " died. You won!\nA new enemy approaches: " + genEnemy.name + "!");
         Enemy.currentEnemy = genEnemy;
         GenerateEnemies();
         yourTurn = true;
@@ -208,6 +208,7 @@ public class GameEngine : MonoBehaviour
                 Enemy.currentEnemy = genEnemy;
                 GenerateEnemies();
                 init = true;
+                SlowText(Enemy.currentEnemy.name + " approaches to fight!");
             }
         }
 
